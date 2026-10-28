@@ -1,0 +1,929 @@
+[
+  {
+    "slug": "suhanova",
+    "name": "Надежда Суханова",
+    "role": "Рукодельница-вязальщица, Нижний Тагил",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "С завода — в свой магазин пряжи",
+    "image": "assets/nadezhda.jpg",
+    "profile": "https://vk.com/id185029675",
+    "videos": []
+  },
+  {
+    "slug": "murzenko",
+    "name": "Иван Мурзенко",
+    "role": "Столяр, мастерская-школа, Серпухов",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "1 320 000 рублей на одном заказе столяра",
+    "image": "assets/cases/c73e04571cfc617ccff81c1d.jpg",
+    "profile": "https://vk.com/ivan.mini",
+    "videos": []
+  },
+  {
+    "slug": "shloma",
+    "name": "Елена Шлома",
+    "role": "Рукоделие, вальдорфские куклы, цветники, г.Пенза",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Заказы на полгода вперёд без рекламы",
+    "image": "assets/cases/29f680473043f50882dcc381.jpg",
+    "profile": "https://vk.com/id200147672",
+    "videos": []
+  },
+  {
+    "slug": "laikalasse",
+    "name": "Лаикалассэ Аикалиндо",
+    "role": "Эльфийские украшения, г.Москва",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Вместо кучи копеечных заказов, беготни с ярмарками выбрал продвижение в ВК и зарабатывает до 100т.р на украшениях",
+    "image": "assets/cases/aee897ad51a8106f9203e083.jpg",
+    "profile": "https://vk.com/laicalasse_aicalindo",
+    "videos": []
+  },
+  {
+    "slug": "zhukov",
+    "name": "Егор Жуков",
+    "role": "Изделия из кожи, г.Новороссийск",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Как кожевнику удалось сохранить доход и обрести финансовую стабильность, несмотря на внешние вызовы",
+    "image": "assets/cases/f0df1d040e92c4a547caab3d.jpg",
+    "profile": "https://vk.com/ejukov",
+    "videos": []
+  },
+  {
+    "slug": "polonitskaya",
+    "name": "Ольга Полоницкая",
+    "role": "Украшения из полимерной глины г.Челябинск",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Клиенты на месяц вперёд! Доказала мужу и сыну, что можно достойно зарабатывать на рукоделии",
+    "image": "assets/cases/f351ef988d5cc03828d3e020.jpg",
+    "profile": "https://vk.com/bijou_m",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239025&hash=b4c628a4b6de9863"
+    ]
+  },
+  {
+    "slug": "gladkov",
+    "name": "Сергей Гладков",
+    "role": "Перетяжка автосалонов, г.Курган",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Начал зарабатывать от 10 к в день на перетяжке салонов авто, закрыл долги более 2 млн рублей за 2 года",
+    "image": "assets/cases/95aa598b40e8008f307bbe52.jpg",
+    "profile": "https://vk.com/gladcar45",
+    "videos": []
+  },
+  {
+    "slug": "evlampieva",
+    "name": "Оксана Евлампиева",
+    "role": "Игрушки ручной работы, г.Иркутск",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Окупила рекламу в 8 раз. Первые результаты после настройки. Что делать дальше?",
+    "image": "assets/cases/a4ac2ddbea9b24e70314a373.jpg",
+    "profile": "https://vk.com/evlampieva_oksana",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239319&hash=3cd7001314ea4823"
+    ]
+  },
+  {
+    "slug": "chagaeva",
+    "name": "Ирина Чагаева",
+    "role": "Вязаные сумки, г.Ува",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Первые продажи в ВК вязаных сумок после курса ВК бабло",
+    "image": "assets/cases/f0bf9123639efb89be5234db.jpg",
+    "profile": "https://vk.com/ira.chag",
+    "videos": []
+  },
+  {
+    "slug": "zhidova",
+    "name": "Юлия Жидова",
+    "role": "Печать на кружках, Верещагино",
+    "categories": [
+      "Рукоделие",
+      "Дизайн"
+    ],
+    "title": "Подняла средний чек в 3 раза и увеличила поток клиентов почти в 10 раз после курса ВК Бабло",
+    "image": "assets/cases/8586865ccb43ec5af1dd82b3.jpg",
+    "profile": "https://vk.com/zhidovayulishna",
+    "videos": []
+  },
+  {
+    "slug": "iks",
+    "name": "Ольга Икс",
+    "role": "Сувениры, 3D печать, Ставрополь",
+    "categories": [
+      "Рукоделие",
+      "Дизайн"
+    ],
+    "title": "Позволяет себе отдыхать по 4 месяца в год, строит свой дом и при этом удовлетворена своим доходом от 3D печати",
+    "image": "assets/cases/f79de1771ed97de01be447d7.jpg",
+    "profile": "https://vk.com/seferote",
+    "videos": []
+  },
+  {
+    "slug": "orekhova",
+    "name": "Надежда Орехова",
+    "role": "Вязаные игрушки, Самара",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Прибавка к пенсии до 50 тысяч в месяц на вязаных игрушках",
+    "image": "assets/cases/e17f3f52cab1fbac4a3d60bc.jpg",
+    "profile": "https://vk.com/nadoreh",
+    "videos": []
+  },
+  {
+    "slug": "drobot",
+    "name": "Александра Дробот",
+    "role": "Кольчужные украшения, Москва",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "С 0 до 200 000 руб. за месяц на украшениях – после курса ВК-Бабло",
+    "image": "assets/cases/07b4406ca12a6fcf2c2b1a2e.jpg",
+    "profile": "https://vk.com/drobotarmor",
+    "videos": []
+  },
+  {
+    "slug": "kozlova",
+    "name": "Валентина Козлова",
+    "role": "Цветы и декор, Москва",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Уволилась с наемной работы, занимается любимым делом",
+    "image": "assets/cases/efeaa94ca0ab6f2a6232d7f7.jpg",
+    "profile": "https://vk.com/id408225727",
+    "videos": []
+  },
+  {
+    "slug": "kordyk",
+    "name": "Татьяна Кордюк",
+    "role": "Вязаные игрушки, Заполярный",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "С 6 до 72 тысяч в месяц на вязаных игрушках. Очередь на 2 месяца вперёд.",
+    "image": "assets/cases/351a39a0b42c44436eb4c139.jpg",
+    "profile": "https://vk.com/tatyana_kordyuk",
+    "videos": []
+  },
+  {
+    "slug": "solovyev",
+    "name": "Дмитрий Соловьев",
+    "role": "Изделия из кожи, Москва",
+    "categories": [
+      "Рукоделие"
+    ],
+    "title": "Через сколько я смогу окупить обучение? На каком уроке будет результат?",
+    "image": "assets/cases/a5d9050bc4dbb7557fa76bd7.jpg",
+    "profile": "https://vk.com/dima_milaris",
+    "videos": []
+  },
+  {
+    "slug": "vasilyev",
+    "name": "Алексей Васильев",
+    "role": "Ковка из металла, сварка, Лодейное Поле",
+    "categories": [
+      "Рукоделие",
+      "Ремонт и услуги"
+    ],
+    "title": "\"Не оставляй свои мечты в столе!\" Как начать зарабатывать на своих увлечениях.",
+    "image": "assets/cases/b0f3687c1df21d56f6bc69f6.jpg",
+    "profile": "https://vk.com/aleksei_kovka_svarka",
+    "videos": []
+  },
+  {
+    "slug": "staroverova",
+    "name": "Анастасия Староверова",
+    "role": "Брейдер, Тольятти",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "700 тысяч в год на косичках",
+    "image": "assets/cases/65d16562a27f9745786eb8e5.jpg",
+    "profile": "https://vk.com/catsbraids",
+    "videos": []
+  },
+  {
+    "slug": "terentyeva",
+    "name": "Елена Терентьева",
+    "role": "Парикмахер, колорист, Омск",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "1 500 000 в год на услугах парикмахера, наслаждается свободой выбора клиентов",
+    "image": "assets/cases/7738a15c0489bfa3a5114f80.jpg",
+    "profile": "https://vk.com/color_hair_salon",
+    "videos": []
+  },
+  {
+    "slug": "boytsova",
+    "name": "Юлия Бойцова-Кан",
+    "role": "Визажист, Саратов",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "2 500 000 руб. на визаже! С нуля! После курсов \"ВК-Бабло\"",
+    "image": "assets/cases/0c9553f56ee6ea30e94c42b9.jpg",
+    "profile": "https://vk.com/juli_boytsova_kan",
+    "videos": []
+  },
+  {
+    "slug": "yakupova",
+    "name": "Елена Якупова",
+    "role": "Парикмахер-колорист, преподаватель. Санкт-Петербург",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "100 тысяч рублей в месяц: история роста и успеха парикмахера",
+    "image": "assets/cases/21d4426063474989b77bc5e3.jpg",
+    "profile": "https://vk.com/belkarygy",
+    "videos": []
+  },
+  {
+    "slug": "stepashova",
+    "name": "Елена Степашова-Котельникова",
+    "role": "Парикмахер-колорист, пгт Шексна, Вологодской области.",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "В декрете выучилась на парикмахера и начала зарабатывать от 50 тыс.руб в месяц с маленьким ребенком",
+    "image": "assets/cases/023d9c1af464a5e2501a9b53.jpg",
+    "profile": "https://vk.com/le_na_777",
+    "videos": []
+  },
+  {
+    "slug": "voronova",
+    "name": "Валерия Воронова-Красичкова",
+    "role": "Мастер перманентного-макияжа, Щелково",
+    "categories": [
+      "Бьюти",
+      "Тату"
+    ],
+    "title": "Она трижды нанимала таргетологов и уходила в минус. Пока не разобралась с рекламой сама!",
+    "image": "assets/cases/58f82bb4a801e2b404205c0f.jpg",
+    "profile": "https://vk.com/voronova_beauty",
+    "videos": []
+  },
+  {
+    "slug": "bezrukova",
+    "name": "Владислава Безрукова",
+    "role": "Парикмахер, биозавивка, кератин. Новосибирск",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Переезд, 0 клиентов и новый старт. Как курс помог бьюти-мастеру увеличить доход в 5 раз",
+    "image": "assets/cases/cd3ab68facb31db6c59c2ada.jpg",
+    "profile": "https://vk.com/vladislavabezrukova",
+    "videos": []
+  },
+  {
+    "slug": "kopylova",
+    "name": "Евгения Копылова",
+    "role": "Косметолог, массажист. Санкт Петербург",
+    "categories": [
+      "Бьюти",
+      "Массаж"
+    ],
+    "title": "Перешла на премиум-аудиторию в косметологии, подняла цены.",
+    "image": "assets/cases/f468e8ceed38eefdd90205c5.jpg",
+    "profile": "https://vk.com/naturalcosmetologist",
+    "videos": []
+  },
+  {
+    "slug": "elkina",
+    "name": "Ирина Елькина",
+    "role": "Парикмахер-колорист.Озерск",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Превратила свой бизнес в источник стабильного дохода и уверенности в будущем",
+    "image": "assets/cases/664e4b6a2a65b0ee0d30907d.jpg",
+    "profile": "https://vk.com/irina_elkina86",
+    "videos": []
+  },
+  {
+    "slug": "potapova",
+    "name": "Дарья Потапова",
+    "role": "Наращивание ресниц, г. Кстово",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "С 0 до 80000 рублей в месяц на наращивании ресниц",
+    "image": "assets/cases/729cfb433c326b6572f86eea.jpg",
+    "profile": "https://vk.com/daria_potapova_lash",
+    "videos": []
+  },
+  {
+    "slug": "kulikova",
+    "name": "Татьяна Куликова",
+    "role": "Маникюр/педикюр, г. Приозерск",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Увеличила доход в 5 раз от услуг по маникюру и обрела финансовую независимость",
+    "image": "assets/cases/62516f45a9a81f4fb766c102.jpg",
+    "profile": "https://vk.com/id693593062",
+    "videos": []
+  },
+  {
+    "slug": "veselova",
+    "name": "Любовь Веселова",
+    "role": "Брейдер, г. Козьмодемьянск",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Уволилась из найма и заработала 1 млн рублей за год на любимом деле",
+    "image": "assets/cases/54ca4951bd7e1e5c138152c0.jpg",
+    "profile": "https://vk.com/lubaveselova",
+    "videos": []
+  },
+  {
+    "slug": "mikhailova",
+    "name": "Римма Михайлова",
+    "role": "Наращивание ресниц, г. Воронеж",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Четырехкратный рост с 50 тысяч до 200 в месяц на наращивании ресниц",
+    "image": "assets/cases/38e1f083d71a560dcd4c808d.jpg",
+    "profile": "https://vk.com/rimma_mikhailova",
+    "videos": []
+  },
+  {
+    "slug": "radchenko",
+    "name": "Инна Радченко",
+    "role": "Парикмахер, г. Тюмень",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "Путь длиной в 10 лет, от беженки до своей студии и заработка от 500 000 рублей в месяц на стрижках.",
+    "image": "assets/cases/938a8b8877cee8c88b081ecc.jpg",
+    "profile": "https://vk.com/id23785694",
+    "videos": []
+  },
+  {
+    "slug": "sinder",
+    "name": "Майя Синдер",
+    "role": "Удаление тату и татуажа, г. Екатеринбург",
+    "categories": [
+      "Бьюти"
+    ],
+    "title": "До 200 тысяч в месяц на удалении татуировок",
+    "image": "assets/cases/306996968bd92ea9f4d959a7.jpg",
+    "profile": "https://vk.com/msinder",
+    "videos": []
+  },
+  {
+    "slug": "tokarevy",
+    "name": "Ольга и Игорь Токаревы",
+    "role": "Тату, Москва",
+    "categories": [
+      "Тату"
+    ],
+    "title": "1 000 000 руб./мес на татуировке! От найма до собственной студии в центре Москвы",
+    "image": "assets/cases/e7a81afb8075052e0b356681.jpg",
+    "profile": "https://vk.com/id209072",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239554&hash=717ee40b3521aecb",
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239043&hash=0d4400ba8523d913"
+    ]
+  },
+  {
+    "slug": "voron",
+    "name": "Андрей Ворон",
+    "role": "Тату, Самара",
+    "categories": [
+      "Тату"
+    ],
+    "title": "150 тысяч в месяц на тату - из хобби в источник дохода",
+    "image": "assets/cases/ee58521917464f8d428d994e.jpg",
+    "profile": "https://vk.com/andreyvoron",
+    "videos": []
+  },
+  {
+    "slug": "agarkov",
+    "name": "Николай Агарков",
+    "role": "Тату, Белгород",
+    "categories": [
+      "Тату"
+    ],
+    "title": "Увеличил доход в 2 раза во время локдауна, пока все ныли и боялись",
+    "image": "assets/cases/ec1a927e88506cfc080b4485.jpg",
+    "profile": "https://vk.com/id154265995",
+    "videos": []
+  },
+  {
+    "slug": "kotov",
+    "name": "Роман Котов",
+    "role": "Тату, Краснодар",
+    "categories": [
+      "Тату"
+    ],
+    "title": "До 250 тысяч в месяц на тату",
+    "image": "assets/cases/75dc3c87249193b1c4bbeafc.jpg",
+    "profile": "https://vk.com/kotovromka",
+    "videos": []
+  },
+  {
+    "slug": "veksha",
+    "name": "Кирилл Векша",
+    "role": "Тату, Воронеж",
+    "categories": [
+      "Тату"
+    ],
+    "title": "До 300 тысяч в месяц на тату, своя студия из 12 человек",
+    "image": "assets/cases/eff6fd2b316c2d7cb402f46e.jpg",
+    "profile": "https://vk.com/freak_ed_nvrn",
+    "videos": []
+  },
+  {
+    "slug": "matryuk",
+    "name": "Василий Матрюк",
+    "role": "Тату, Екатеринбург",
+    "categories": [
+      "Тату"
+    ],
+    "title": "Зарабатывает от 150 т.р. в месяц на тату. Доход растет каждый год.",
+    "image": "assets/cases/f2e7c77306184c87c3e8a4f2.jpg",
+    "profile": "https://vk.com/kyde_tattoo",
+    "videos": []
+  },
+  {
+    "slug": "popov_tatu",
+    "name": "Олег Попов",
+    "role": "Тату, Иркутск",
+    "categories": [
+      "Тату"
+    ],
+    "title": "Окупил курс за месяц. Вырос в доходе в 3 раза.",
+    "image": "assets/cases/1b00a7cdff17fcaabc66c769.jpg",
+    "profile": "https://vk.com/oleg_tattoo_ork",
+    "videos": []
+  },
+  {
+    "slug": "samoilov",
+    "name": "Александр Самойлов",
+    "role": "Тату, Новокузнецк",
+    "categories": [
+      "Тату"
+    ],
+    "title": "В 2 раза увеличил свой доход сразу после курса",
+    "image": "assets/cases/61e7b4dd081297becbde328d.jpg",
+    "profile": "https://vk.com/id6206259",
+    "videos": []
+  },
+  {
+    "slug": "okladnikova",
+    "name": "Елизавета Халаджян (Окладникова)",
+    "role": "Тату, Москва",
+    "categories": [
+      "Тату"
+    ],
+    "title": "160 000 руб./мес. Увеличила доход в 4 раза после курса",
+    "image": "assets/cases/399260ca13971f30c2168a0a.jpg",
+    "profile": "https://vk.com/id2754191",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239033&hash=ebf730473fcee259"
+    ]
+  },
+  {
+    "slug": "vityk",
+    "name": "Ирина Витюк",
+    "role": "Тату, Екатеринбург",
+    "categories": [
+      "Тату"
+    ],
+    "title": "Почувствовала себя востребованным мастером и выросла в доходе в 5 раз",
+    "image": "assets/cases/534a02d187120ebb408e567c.jpg",
+    "profile": "https://vk.com/irina_vityuk",
+    "videos": []
+  },
+  {
+    "slug": "korneva",
+    "name": "Виолетта Корнева",
+    "role": "Тату,Санкт-Петербург",
+    "categories": [
+      "Тату"
+    ],
+    "title": "Спаслась от наёмной работы, уехала за границу. Бьет татуировки в путешествии!",
+    "image": "assets/cases/3521844a603145e851cd43bd.jpg",
+    "profile": "https://vk.com/whyvioletta",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239029&hash=135e79974e75e703"
+    ]
+  },
+  {
+    "slug": "vkoroleva",
+    "name": "Виктория Королева",
+    "role": "Свадебный фотограф, Саратов",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "70 свадеб в год с высоким ценником - результат после курса ВК бабло",
+    "image": "assets/cases/867ca66464380534de7982c1.jpg",
+    "profile": "https://vk.com/viktorija_koroleva",
+    "videos": []
+  },
+  {
+    "slug": "nesterova",
+    "name": "Алена Нестерова",
+    "role": "Фотограф, Екатеринбург",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "Запустила рекламу и собрала 350 заявок на фотосессии",
+    "image": "assets/cases/01830fd7234f8838b58626e6.jpg",
+    "profile": "https://vk.com/nesterova_photoart",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239179&hash=064e29174295e17f"
+    ]
+  },
+  {
+    "slug": "rahshtein",
+    "name": "Анна Рахштейн",
+    "role": "Фотограф, Санкт-Петербург",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "Как фотографу-новичку начать зарабатывать на любимом деле",
+    "image": "assets/cases/4ce67f53f64772751bf92341.jpg",
+    "profile": "https://vk.com/annarahshtein",
+    "videos": []
+  },
+  {
+    "slug": "mazur",
+    "name": "Александра Мазур",
+    "role": "Фотограф, Санкт-Петербург",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "От редких клиентов фотографа к сказочным историям. Цена за сьемку выросла с 3000 до 6000 руб за час.",
+    "image": "assets/cases/7b5384e25e283cd510a69d21.jpg",
+    "profile": "https://vk.com/id224423510",
+    "videos": []
+  },
+  {
+    "slug": "kotelnikova",
+    "name": "Екатерина Котельникова (Половникова)",
+    "role": "Фотограф, Нижний Тагил",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "700 000 руб. за сезон на фотоальбомах в разгар пандемии!",
+    "image": "assets/cases/2d1013531b453a9b03531e49.jpg",
+    "profile": "https://vk.com/id3480015",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239049&hash=e25c6ba7c1cfdf26"
+    ]
+  },
+  {
+    "slug": "plyzgnik",
+    "name": "Анастасия Плужник",
+    "role": "Фотограф, Петрозаводск",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "10 съемок в месяц, находясь в декрете с полугодовалым малышом. История фотографа Анастасии Плужник",
+    "image": "assets/cases/abdeed6349e327d3a6fd1792.jpg",
+    "profile": "https://vk.com/id34685786",
+    "videos": []
+  },
+  {
+    "slug": "arshanskaya",
+    "name": "Галина Аршанская",
+    "role": "Фотограф, г.Пушкин",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "До 100 тысяч в месяц - доход многодетной мамы на фото",
+    "image": "assets/cases/2ec1c9b7573798cc78ec4104.jpg",
+    "profile": "https://vk.com/galinafoto",
+    "videos": []
+  },
+  {
+    "slug": "mehova",
+    "name": "Nika Mehova",
+    "role": "Фотограф, видеограф, г.Севастополь",
+    "categories": [
+      "Фото и видео"
+    ],
+    "title": "С 0 до 80000 руб в месяц на фото - результат после курса ВК бабло",
+    "image": "assets/cases/dcc7dbd9010330ee71a5602b.jpg",
+    "profile": "https://vk.com/nikamehova",
+    "videos": []
+  },
+  {
+    "slug": "gubareva",
+    "name": "Анна Губарева",
+    "role": "Репетитор по английскому языку, г.Тула",
+    "categories": [
+      "Образование"
+    ],
+    "title": "120 тысяч в месяц на услугах репетитора на курсе ВК Бабло",
+    "image": "assets/cases/dd7175d7828d70642330eed4.jpg",
+    "profile": "https://vk.com/anngubareva",
+    "videos": []
+  },
+  {
+    "slug": "pustovoit",
+    "name": "Екатерина Пустовойт",
+    "role": "Репетитор по истории и естествознанию, г.Москва",
+    "categories": [
+      "Образование"
+    ],
+    "title": "410 000 в месяц – рекорд после курса ВК-Бабло",
+    "image": "assets/cases/fb35d08617a3dbe96933aaf7.jpg",
+    "profile": "https://vk.com/kate_pustovoit",
+    "videos": []
+  },
+  {
+    "slug": "tramvaeva",
+    "name": "Виктория Трамваева",
+    "role": "Учитель игры на гитаре и укулеле, г.Москва",
+    "categories": [
+      "Образование"
+    ],
+    "title": "Возродила школу после обвала с помощью продвижения в ВК и уберегла себя от банкротства",
+    "image": "assets/cases/21d88a5ebed66006cbcc9b74.jpg",
+    "profile": "https://vk.com/tramvictory",
+    "videos": []
+  },
+  {
+    "slug": "kostyleva",
+    "name": "Елена Костылева",
+    "role": "Репетитор по математике, г.Москва",
+    "categories": [
+      "Образование"
+    ],
+    "title": "Выросла в доходе в 2,5 раза после курса ВК бабло, позволила себе первые каникулы за 4 года",
+    "image": "assets/cases/27eef5bb09279a262841e86f.jpg",
+    "profile": "https://vk.com/id830834982",
+    "videos": []
+  },
+  {
+    "slug": "smirnova",
+    "name": "Полина Смирнова",
+    "role": "Репетитор по русскому языку, ОГЭ/ЕГЭ",
+    "categories": [
+      "Образование"
+    ],
+    "title": "Репетитор перешла на группы и увеличила доход в 3 раза",
+    "image": "assets/cases/84e18e2b7c2d39950721e542.jpg",
+    "profile": "https://vk.com/polina_alekseevna_sm",
+    "videos": []
+  },
+  {
+    "slug": "shiganova",
+    "name": "Алина и Филипп Шигановы",
+    "role": "Массаж, Новосибирск",
+    "categories": [
+      "Массаж"
+    ],
+    "title": "До 190 тысяч рублей в месяц на массаже после курса ВК бабло",
+    "image": "assets/cases/53543f4d12f8935ae706f315.jpg",
+    "profile": "https://vk.com/alinaosmi",
+    "videos": []
+  },
+  {
+    "slug": "zhukova",
+    "name": "Инесса Жукова",
+    "role": "Массаж, Великий Нвогород",
+    "categories": [
+      "Массаж"
+    ],
+    "title": "Купила квартиру в центре! Как беженка с тремя детьми встала на ноги в новой стране",
+    "image": "assets/cases/834ad6f15442b268ef02ad16.jpg",
+    "profile": "https://vk.com/inessa.massage",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239180&hash=c67b10a4a3c5dcee",
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239044&hash=88ba30e9862e0e54"
+    ]
+  },
+  {
+    "slug": "klimpush",
+    "name": "Ирина Климпуш",
+    "role": "Детский массаж, Боровичи",
+    "categories": [
+      "Массаж"
+    ],
+    "title": "Клиенты на месяц вперёд! Теперь не просит у мужа деньги",
+    "image": "assets/cases/756646f847d3fc323992a61d.jpg",
+    "profile": "https://vk.com/irinaklimpush",
+    "videos": []
+  },
+  {
+    "slug": "vinichyk",
+    "name": "Оксана Виничук",
+    "role": "Массаж, г.Удомля",
+    "categories": [
+      "Массаж"
+    ],
+    "title": "Боишься уйти из найма и потерять соц.пакет? Узнай, как совмещать и выигрывать!",
+    "image": "assets/cases/3decf85eb75393cb30c1499b.jpg",
+    "profile": "https://vk.com/oksana.vinichuk",
+    "videos": []
+  },
+  {
+    "slug": "andreeva",
+    "name": "Анна Андреева",
+    "role": "Массаж, г.Сыктывкар",
+    "categories": [
+      "Массаж"
+    ],
+    "title": "Массажист вышла на стабильные 120 тысяч в месяц после курса ВК бабло",
+    "image": "assets/cases/4102db5c0c22e0b1c5bb4f80.jpg",
+    "profile": "https://vk.com/id81245930",
+    "videos": []
+  },
+  {
+    "slug": "aspiotis",
+    "name": "Кристина Аспиотис",
+    "role": "Аниматор, ведущая праздников, Краснодар",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "До 220 тысяч в месяц, своя команда аниматоров",
+    "image": "assets/cases/be08d035055dd09cc54be5d5.jpg",
+    "profile": "https://vk.com/id12343105",
+    "videos": []
+  },
+  {
+    "slug": "kozmin",
+    "name": "Александр Козьмин",
+    "role": "Фокусник, ведущий праздников, Красноярск",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "1 300 000 руб./год на фокусах! Удвоил ежемесячный доход. Группа VK в топе!",
+    "image": "assets/cases/af7cd236b87de38ae4ef5f30.jpg",
+    "profile": "https://vk.com/akozmin5",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239387&hash=49a0c8a6e9113779"
+    ]
+  },
+  {
+    "slug": "protasova",
+    "name": "Олеся Протасова",
+    "role": "Ведущая праздников, Тольятти",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "1 000 000 руб. на праздниках – после курса ВК-Бабло.",
+    "image": "assets/cases/7c769ae8bb5c58ca73ddd43c.jpg",
+    "profile": "https://vk.com/id15623755",
+    "videos": []
+  },
+  {
+    "slug": "pogrebnyak",
+    "name": "Дмитрий Погребняк",
+    "role": "Семейный ведущий, г.Липецк",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "Купил новую машину за наличку после обучения",
+    "image": "assets/cases/3c3adb5a752afb1ff72ae72c.jpg",
+    "profile": "https://vk.com/id4150498",
+    "videos": []
+  },
+  {
+    "slug": "slepchenko",
+    "name": "Илья Слепченко",
+    "role": "Ведущий, предприниматель, г. Ростов-на-Дону",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "Оборот почти 200 000 руб./мес! Этот курс изменил мою жизнь!",
+    "image": "assets/cases/79ae91cc691e6b2667abcf8d.jpg",
+    "profile": "https://vk.com/id29650537",
+    "videos": [
+      "https://vkvideo.ru/video_ext.php?oid=-71293967&id=456239032&hash=93a4a9614d9f86fb"
+    ]
+  },
+  {
+    "slug": "sedova",
+    "name": "Елена Седова",
+    "role": "Ведущая праздников, г. Москва",
+    "categories": [
+      "Праздники"
+    ],
+    "title": "Удвоила доход, вышла на 2 млн в год, купила новую машину, пришли клиенты, которым важно качество, а не цена.",
+    "image": "assets/cases/152c095aaf54412e8db9b321.jpg",
+    "profile": "https://vk.com/esedova85",
+    "videos": []
+  },
+  {
+    "slug": "sennova",
+    "name": "Ольга Сеннова",
+    "role": "Школа танцев, Иркутск",
+    "categories": [
+      "Спорт и путешествия"
+    ],
+    "title": "До 300 000 рублей в месяц на танцевальном клубе после курса ВК-Бабло",
+    "image": "assets/cases/724d79afaa9e7075b6bd9502.jpg",
+    "profile": "https://vk.com/olgasennova",
+    "videos": []
+  },
+  {
+    "slug": "sinitsyna",
+    "name": "Наталия Синицына",
+    "role": "Турагент, Москва",
+    "categories": [
+      "Спорт и путешествия"
+    ],
+    "title": "10 заявок на бронирование туров в месяц - результат после курса ВК бабло",
+    "image": "assets/cases/06aca28961ac861d1e00a583.jpg",
+    "profile": "https://vk.com/sinitsyna_natali",
+    "videos": []
+  },
+  {
+    "slug": "hairullina",
+    "name": "Елена Хайруллина",
+    "role": "Риелтор, Тюмень",
+    "categories": [
+      "Недвижимость"
+    ],
+    "title": "Ей 63. И она настроила рекламу в VK в сложной нише - риелтор.",
+    "image": "assets/cases/49cfa2fe7cf7f7c6b6618bdb.jpg",
+    "profile": "https://vk.com/hairullina_rielt",
+    "videos": []
+  },
+  {
+    "slug": "chigareva",
+    "name": "Юлия Чигарева",
+    "role": "Дизайн соц.сетей, Воронеж",
+    "categories": [
+      "Дизайн"
+    ],
+    "title": "Не вышла в найм после декрета, выбрала дело по душе",
+    "image": "assets/cases/33bdaca3dccf2fa3882ee6be.jpg",
+    "profile": "https://vk.com/yulia_chig",
+    "videos": []
+  },
+  {
+    "slug": "vladimirova",
+    "name": "Анна Владимирова",
+    "role": "Дизайнер-иллюстратор, г.Киров",
+    "categories": [
+      "Дизайн"
+    ],
+    "title": "С 0 до 60 тысяч в месяц на услугах дизайнера",
+    "image": "assets/cases/7e0dedaeabb4daa90ba71469.jpg",
+    "profile": "https://vk.com/ann_artinpaws",
+    "videos": []
+  },
+  {
+    "slug": "gapon",
+    "name": "Светлана Гапон",
+    "role": "Кондитер, свадебные торты, Севастополь",
+    "categories": [
+      "Кондитерское дело"
+    ],
+    "title": "От простых тортов к роскошным свадебным. Как курс изменил карьеру кондитера",
+    "image": "assets/cases/ca1218f1b3142b9653b061ff.jpg",
+    "profile": "https://vk.com/svetlanagapon",
+    "videos": []
+  },
+  {
+    "slug": "desuykov",
+    "name": "Дмитрий Десюков",
+    "role": "Электрик, монтаж умного дома, Красноярск",
+    "categories": [
+      "Ремонт и услуги"
+    ],
+    "title": "От хаоса к стабильности: Как курс помог увеличить доход и выйти на новый уровень",
+    "image": "assets/cases/03fac687907ecd21c80bfa29.jpg",
+    "profile": "https://vk.com/ddasmart",
+    "videos": []
+  },
+  {
+    "slug": "polovtsev",
+    "name": "Михаил Половцев",
+    "role": "Электрик, Заречный",
+    "categories": [
+      "Ремонт и услуги"
+    ],
+    "title": "Очередь на 3 недели вперед на услуги электрика, подумывает бросать работу и создавать команду",
+    "image": "assets/cases/64b2ca3d6063e6f0ce159f00.jpg",
+    "profile": "https://vk.com/don_corteze",
+    "videos": []
+  }
+]
