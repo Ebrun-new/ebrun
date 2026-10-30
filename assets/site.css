@@ -113,3 +113,11 @@ button.contact-mail{background:none;color:inherit;font-family:inherit;text-align
 .reading-mode .contact-dialog{background:#fff;color:#111}
 .reading-mode .contact-option{border-color:#111}
 .reading-mode .contact-option:hover,.reading-mode .contact-option:focus-visible{background:#111;color:#fff}
+.cookie-banner{position:fixed;left:var(--pad);bottom:24px;z-index:60;max-width:560px;background:var(--cream);color:var(--espresso);border:1px solid var(--sand);padding:26px 28px;box-shadow:0 18px 70px #0006}
+.cookie-banner p{font-size:14px;line-height:1.55}
+.cookie-banner .cookie-title{font-size:17px;font-weight:700;margin-bottom:10px}
+.cookie-banner a{border-bottom:1px solid currentColor}
+.cookie-banner .button{margin-top:18px}
+.reading-mode .cookie-banner{background:#fff;color:#111}
+@media(max-width:720px){.cookie-banner{left:0;right:0;bottom:0;max-width:none;border-width:1px 0 0;padding:22px var(--pad) 26px}.cookie-banner .button{width:100%}}
+@media print{.cookie-banner{display:none}}
