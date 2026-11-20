@@ -3,20 +3,20 @@
 (()=>{const dialog=document.querySelector('#contact-dialog');if(!dialog)return;let opener=null;document.querySelectorAll('[data-contact-open]').forEach(b=>b.addEventListener('click',()=>{opener=b;dialog.showModal()}));dialog.querySelector('[data-contact-close]').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.addEventListener('close',()=>opener?.focus())})();
 (()=>{
 /* Согласие на cookie и Яндекс Метрику (20.11.2026). Метрика загружается только после «Принять».
-   Номер счётчика вписать в METRIKA_ID (пока счётчика нет — ничего не загружается).
+   Вебвизор включён (решение Евгении 20.11.2026, упомянут в политике, согласии и окне). Номер счётчика вписать в METRIKA_ID (пока счётчика нет — ничего не загружается).
    Выбор хранится в cookie brun_cookie_consent = v2:accepted | v2:declined на год; «Настройки cookie» в подвале открывают окно снова. */
 const METRIKA_ID=114385375;
-const NAME='brun_cookie_consent',VERSION='v2';
+const NAME='brun_cookie_consent',VERSION='v3';
 const read=()=>{try{const c=document.cookie.split('; ').find(x=>x.startsWith(NAME+'='));const v=c?decodeURIComponent(c.split('=')[1]):localStorage.getItem(NAME);return v&&v.startsWith(VERSION+':')?v.slice(VERSION.length+1):null}catch{return null}};
 const save=v=>{const val=VERSION+':'+v;try{document.cookie=NAME+'='+encodeURIComponent(val)+'; max-age=31536000; path=/; SameSite=Lax'}catch{}try{localStorage.setItem(NAME,val)}catch{}};
 let metrikaOn=false;
-function loadMetrika(){if(!METRIKA_ID||metrikaOn)return;metrikaOn=true;(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');window.ym(METRIKA_ID,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:false})}
+function loadMetrika(){if(!METRIKA_ID||metrikaOn)return;metrikaOn=true;(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();k=e.createElement(t);a=e.getElementsByTagName(t)[0];k.async=1;k.src=r;a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js','ym');window.ym(METRIKA_ID,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})}
 function clearMetrika(){document.cookie.split('; ').map(c=>c.split('=')[0]).filter(n=>/^_ym/.test(n)).forEach(n=>{[location.hostname,'.'+location.hostname.replace(/^www\./,''),''].forEach(d=>{document.cookie=n+'=; max-age=0; path=/'+(d?'; domain='+d:'')})});try{Object.keys(localStorage).filter(k=>/^_ym/.test(k)).forEach(k=>localStorage.removeItem(k))}catch{}}
 const doc=k=>document.querySelector(`.footer-links [data-doc="${k}"]`)?.getAttribute('href')||(k==='privacy'?'/privacy/':'/soglasie/');
 let box=null;
 function close(){if(box){box.remove();box=null}}
 function show(){if(box)return;box=document.createElement('div');box.className='cookie-banner';box.setAttribute('role','region');box.setAttribute('aria-label','Согласие на использование cookie');
-box.innerHTML='<p class="cookie-title">Это не воронка продаж. Просто cookie</p><p>Маркетолог без них — как запуск без аналитики. С вашего разрешения сайт включит cookie и Яндекс Метрику, чтобы я видела, что здесь читают и какая реклама работает.</p><p>Нажимая «Принять», вы даёте <a href="'+doc('consent')+'">согласие</a> на обработку персональных данных по <a href="'+doc('privacy')+'">Политике</a>. Без него Метрика не включится.</p><div class="cookie-actions"><button class="button button--accent" type="button" data-cookie-accept>Принять</button><button class="button cookie-decline" type="button" data-cookie-decline>Отказаться</button></div>';
+box.innerHTML='<p class="cookie-title">Это не воронка продаж. Просто cookie</p><p>Маркетолог без них — как запуск без аналитики. С вашего разрешения сайт включит cookie и Яндекс Метрику, чтобы я видела, что здесь читают, как листают и какая реклама работает.</p><p>Нажимая «Принять», вы даёте <a href="'+doc('consent')+'">согласие</a> на обработку персональных данных по <a href="'+doc('privacy')+'">Политике</a>. Без него Метрика не включится.</p><div class="cookie-actions"><button class="button button--accent" type="button" data-cookie-accept>Принять</button><button class="button cookie-decline" type="button" data-cookie-decline>Отказаться</button></div>';
 box.querySelector('[data-cookie-accept]').addEventListener('click',()=>{save('accepted');close();loadMetrika()});
 box.querySelector('[data-cookie-decline]').addEventListener('click',()=>{const was=metrikaOn;save('declined');clearMetrika();close();if(was)location.reload()});
 document.body.appendChild(box)}
