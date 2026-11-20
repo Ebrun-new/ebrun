@@ -3,4 +3,46 @@
 (()=>{const dialog=document.querySelector('#contact-dialog');if(!dialog)return;let opener=null;document.querySelectorAll('[data-contact-open]').forEach(b=>b.addEventListener('click',()=>{opener=b;dialog.showModal()}));dialog.querySelector('[data-contact-close]').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});dialog.addEventListener('close',()=>opener?.focus())})();
 (()=>{const VERSION='v1';const NAME='brun_cookie_consent';const has=()=>{try{return document.cookie.split('; ').includes(NAME+'='+VERSION)||localStorage.getItem(NAME)===VERSION}catch{return false}};if(has())return;const box=document.createElement('div');box.className='cookie-banner';box.setAttribute('role','region');box.setAttribute('aria-label','Согласие на использование cookie');box.innerHTML='<p class="cookie-title">Это не воронка продаж. Просто cookie</p><p>Маркетолог без них — как запуск без аналитики. Поэтому сайт использует файлы cookie.</p><p>Оставаясь на сайте, вы даёте своё <a href="https://disk.yandex.ru/i/SrF8UDqtQzbjqQ" target="_blank" rel="noopener noreferrer">согласие</a> на обработку персональных данных в порядке и на условиях <a href="https://disk.yandex.ru/i/DJbmuoh8nDcPFA" target="_blank" rel="noopener noreferrer">Политики обработки персональных данных</a>.</p><button class="button button--accent" type="button">Соглашаюсь</button>';box.querySelector('button').addEventListener('click',()=>{try{document.cookie=NAME+'='+VERSION+'; max-age=31536000; path=/; SameSite=Lax'}catch{}try{localStorage.setItem(NAME,VERSION)}catch{}box.remove()});document.body.appendChild(box)})();
 (()=>{const box=document.querySelector('[data-formats]');if(!box)return;box.querySelectorAll('.format').forEach(f=>{const b=f.querySelector('.format-toggle');const more=f.querySelector('.format-more');const set=open=>{f.classList.toggle('is-open',open);b.setAttribute('aria-expanded',String(open));b.querySelector('.format-toggle-label').textContent=open?'Свернуть':'Подробнее';b.querySelector('.format-toggle-sign').textContent=open?'−':'+';if('inert' in more)more.inert=!open};set(false);b.addEventListener('click',()=>set(b.getAttribute('aria-expanded')!=='true'))});box.classList.add('formats-ready')})();
-(()=>{const f=document.querySelector('[data-funnel]');if(!f||!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;f.classList.add('is-waiting');const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){f.classList.remove('is-waiting');f.classList.add('is-playing');io.disconnect()}},{threshold:.25});io.observe(f)})();
+(()=>{
+/* Анимация схемы автоворонки: один проход ~10,5 с при появлении схемы на экране. Тексты всё время видны; при «уменьшении движения» схема статична. */
+const fig=document.querySelector('[data-funnel]');
+if(!fig||!('IntersectionObserver' in window)||!window.requestAnimationFrame||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+const svg=fig.querySelector('.fl-desktop'),mob=fig.querySelector('.fl-mobile');
+const desk=()=>getComputedStyle(svg).display!=='none';
+const root=()=>desk()?svg:mob;
+const step=n=>root().querySelector(`[data-fl="${n}"]`);
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const ease=p=>p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+const NS='http://www.w3.org/2000/svg';
+let dots=[];
+function makeDots(){dots.forEach(d=>d.remove());dots=[];for(let i=0;i<2;i++){let d;if(desk()){d=document.createElementNS(NS,'g');d.setAttribute('class','fl-dot');d.innerHTML='<circle class="fl-dot-halo" r="8"/><circle class="fl-dot-core" r="3.5"/>';svg.appendChild(d)}else{d=document.createElement('span');d.className='fl-dot-m';d.setAttribute('aria-hidden','true');mob.appendChild(d)}dots.push(d)}}
+function place(d,x,y){if(d instanceof SVGElement)d.setAttribute('transform',`translate(${x} ${y})`);else d.style.transform=`translate(${x}px,${y}px)`}
+/* Маршруты на телефоне считаются по положению плашек */
+function box(n){const r=step(n).getBoundingClientRect(),o=mob.getBoundingClientRect();return{l:r.left-o.left,r:r.right-o.left,t:r.top-o.top,b:r.bottom-o.top,cx:(r.left+r.right)/2-o.left,cy:(r.top+r.bottom)/2-o.top}}
+function mobileRoute(name){const v=(a,b)=>{const A=box(a),B=box(b);return[[A.cx,A.b],[B.cx,B.t]]};
+ const sp=mob.querySelector('.fl-split').getBoundingClientRect(),o=mob.getBoundingClientRect(),sy=sp.top-o.top+12;
+ switch(name){case'r1a':return v('s1','s2');case'r1b':return v('s2','s3');case'r1c':return v('s3','s4');
+ case'to-buy':case'to-wait':{const A=box('s4'),B=box(name==='to-buy'?'buy':'wait');return[[A.cx,A.b],[A.cx,sy],[B.cx,sy],[B.cx,B.t]]}
+ case'r2a':return v('buy','learn');case'r2b':return v('learn','repeat');case'r3a':return v('wait','stay');case'r3b':return v('stay','back');
+ case'return':{const A=box('back'),B=box('buy'),gx=(B.r+A.l)/2;return[[A.l,A.cy],[gx,A.cy],[gx,B.cy],[B.r,B.cy]]}}}
+function track(name){if(desk()){const p=svg.querySelector(`[data-fl-path="${name}"]`),L=p.getTotalLength();return e=>{const q=p.getPointAtLength(e*L);return[q.x,q.y]}}
+ const pts=mobileRoute(name),seg=[];let L=0;for(let i=1;i<pts.length;i++){const d=Math.hypot(pts[i][0]-pts[i-1][0],pts[i][1]-pts[i-1][1]);seg.push(d);L+=d}
+ return e=>{let s=e*L;for(let i=0;i<seg.length;i++){if(s<=seg[i]||i===seg.length-1){const k=seg[i]?Math.min(1,s/seg[i]):1;return[pts[i][0]+(pts[i+1][0]-pts[i][0])*k,pts[i][1]+(pts[i+1][1]-pts[i][1])*k]}s-=seg[i]}}}
+function line(name,on){const el=desk()?svg.querySelector(`[data-fl-path="${name}"]`):(name==='return'?mob.querySelector('.fl-return'):null);if(el)el.classList.toggle('is-active',on);if(desk()&&name==='to-wait')line('wait-feed',on)}
+function move(names,dur){const ts=names.map(track);names.forEach(n=>line(n,true));ts.forEach((t,i)=>{const[x,y]=t(0);place(dots[i],x,y);dots[i].classList.add('is-on')});
+ return new Promise(res=>{const t0=performance.now();const frame=now=>{const p=Math.min(1,(now-t0)/dur),e=ease(p);ts.forEach((t,i)=>{const[x,y]=t(e);place(dots[i],x,y)});if(p<1)requestAnimationFrame(frame);else{ts.forEach((t,i)=>dots[i].classList.remove('is-on'));names.forEach(n=>line(n,false));res()}};requestAnimationFrame(frame)})}
+const on=(...n)=>n.forEach(x=>step(x).classList.add('is-active'));
+const off=(...n)=>n.forEach(x=>step(x).classList.remove('is-active'));
+const reach=(...n)=>n.forEach(x=>step(x).classList.add('is-reached'));
+async function play(){
+ fig.classList.add('is-anim');makeDots();
+ on('s1');await sleep(600);
+ for(const[a,b,p]of[['s1','s2','r1a'],['s2','s3','r1b'],['s3','s4','r1c']]){await move([p],850);off(a);on(b);await sleep(300)}
+ await move(['to-buy','to-wait'],1500);off('s4');reach('buy');on('buy','wait');await sleep(450);
+ await move(['r2a','r3a'],850);off('buy','wait');on('learn','stay');await sleep(300);
+ await move(['r2b','r3b'],850);off('learn','stay');reach('repeat');on('repeat','back');await sleep(600);
+ off('repeat');await move(['return'],1400);off('back');on('buy');await sleep(600);
+ off('buy');fig.querySelectorAll('[data-fl]').forEach(e=>e.classList.add('is-reached'));fig.classList.remove('is-anim');dots.forEach(d=>d.remove());dots=[]}
+const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();play()}},{threshold:.5});
+io.observe(svg);io.observe(mob);
+})();
