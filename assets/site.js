@@ -5,7 +5,7 @@
 /* Согласие на cookie и Яндекс Метрику (20.11.2026). Метрика загружается только после «Принять».
    Номер счётчика вписать в METRIKA_ID (пока счётчика нет — ничего не загружается).
    Выбор хранится в cookie brun_cookie_consent = v2:accepted | v2:declined на год; «Настройки cookie» в подвале открывают окно снова. */
-const METRIKA_ID=null;
+const METRIKA_ID=114385375;
 const NAME='brun_cookie_consent',VERSION='v2';
 const read=()=>{try{const c=document.cookie.split('; ').find(x=>x.startsWith(NAME+'='));const v=c?decodeURIComponent(c.split('=')[1]):localStorage.getItem(NAME);return v&&v.startsWith(VERSION+':')?v.slice(VERSION.length+1):null}catch{return null}};
 const save=v=>{const val=VERSION+':'+v;try{document.cookie=NAME+'='+encodeURIComponent(val)+'; max-age=31536000; path=/; SameSite=Lax'}catch{}try{localStorage.setItem(NAME,val)}catch{}};
