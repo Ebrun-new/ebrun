@@ -362,3 +362,7 @@ button.contact-mail{background:none;color:inherit;font-family:inherit;text-align
 .reading-mode .honest-card h3{font:700 1.5rem/1.3 Golos}
 .reading-mode .article-summary{background:#f4f4f4}
 .reading-mode .blog-card h2{font:700 1.6rem/1.35 Golos}
+/* 22.11.2026: обложка статьи над содержанием */
+.post-cover{margin:0 0 40px}
+.post-cover img{border:1px solid var(--line)}
+.hide-images .post-cover{display:none!important}
