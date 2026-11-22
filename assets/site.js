@@ -67,3 +67,35 @@ async function play(){
 const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();play()}},{threshold:.5});
 io.observe(svg);io.observe(mob);
 })();
+/* 22.11.2026: статья блога — свайп-счётчик, появление блоков, набегающие цифры, чек-лист, графики на весь экран */
+(()=>{
+const post=document.querySelector('.post');if(!post)return;
+const calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// счётчик «1 / 6» у листаемых блоков
+document.querySelectorAll('[data-swipe]').forEach(box=>{const track=box.querySelector('.swipe-track'),cur=box.querySelector('[data-swipe-current]');if(!track||!cur)return;const items=[...track.children];const upd=()=>{const left=track.getBoundingClientRect().left;let best=0,dist=1e9;items.forEach((it,i)=>{const d=Math.abs(it.getBoundingClientRect().left-left-parseFloat(getComputedStyle(track).paddingLeft));if(d<dist){dist=d;best=i}});cur.textContent=best+1};track.addEventListener('scroll',()=>requestAnimationFrame(upd),{passive:true})});
+// набегающие цифры
+const fmt=(v,dec)=>dec?v.toFixed(dec).replace('.',','):String(Math.round(v));
+const count=el=>{const to=parseFloat(el.dataset.count),dec=(el.dataset.count.split('.')[1]||'').length;if(calm){el.textContent=fmt(to,dec);return}const t0=performance.now(),dur=1100;const step=t=>{const k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);el.textContent=fmt(to*e,dec);if(k<1)requestAnimationFrame(step)};el.textContent=fmt(0,dec);requestAnimationFrame(step)};
+// появление при прокрутке
+const reveals=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+ if(!calm)document.documentElement.classList.add('js-reveal');
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('is-in');e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target)}),{rootMargin:'0px 0px -12% 0px'});
+ reveals.forEach(r=>io.observe(r));
+}
+// чек-лист «Совпало: N из 5»
+document.querySelectorAll('[data-check]').forEach(box=>{const boxes=[...box.querySelectorAll('input[type=checkbox]')],out=box.querySelector('[data-check-count]');const upd=()=>{const n=boxes.filter(b=>b.checked).length;out.textContent=n;box.dataset.state=n===0?'':n<3?'low':'high'};boxes.forEach(b=>b.addEventListener('change',upd));upd()});
+// графики на весь экран
+const zooms=[...document.querySelectorAll('[data-zoom]')];if(!zooms.length)return;
+const dlg=document.createElement('dialog');dlg.className='lightbox';dlg.setAttribute('aria-label','График крупно');
+dlg.innerHTML='<div class="lightbox-bar"><span class="lightbox-count"></span><button type="button" data-lb-close aria-label="Закрыть">×</button></div><div class="lightbox-body"><img alt=""></div><p class="lightbox-cap"></p><div class="lightbox-nav"><button type="button" data-lb-prev>← Назад</button><button type="button" data-lb-next>Дальше →</button></div>';
+document.body.append(dlg);
+const img=dlg.querySelector('img'),cap=dlg.querySelector('.lightbox-cap'),cnt=dlg.querySelector('.lightbox-count');let list=[],idx=0,opener=null;
+const show=i=>{idx=(i+list.length)%list.length;const src=list[idx].querySelector('img'),fc=list[idx].closest('figure')?.querySelector('figcaption');img.src=src.currentSrc||src.src;img.alt=src.alt;cap.textContent=fc?fc.textContent:'';cnt.textContent=(idx+1)+' / '+list.length;dlg.querySelector('.lightbox-body').scrollLeft=0};
+zooms.forEach(b=>b.addEventListener('click',()=>{const scope=b.closest('.swipe-track')||b.parentElement;list=[...scope.querySelectorAll('[data-zoom]')];opener=b;show(list.indexOf(b));dlg.showModal()}));
+dlg.querySelector('[data-lb-close]').addEventListener('click',()=>dlg.close());
+dlg.querySelector('[data-lb-prev]').addEventListener('click',()=>show(idx-1));
+dlg.querySelector('[data-lb-next]').addEventListener('click',()=>show(idx+1));
+dlg.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(idx-1);if(e.key==='ArrowRight')show(idx+1)});
+dlg.addEventListener('close',()=>opener?.focus());
+})();
